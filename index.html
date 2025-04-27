@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h2>CI/CD</h2>
+					<p>
+						CI/CD aims to streamline and accelerate the software development lifecycle. 
+						It`s a methodology that automates the processes of building, testing, and deploying software. 
+					</p>
+					<img src="./img/image.png" alt="ci-cd" style="width: 350px; height: 200px;">
+				</section>
+				<section>
+					<h2>Why its`s important?</h2>
+					<p>The core objective of CI/CD is to minimize errors and speed up the delivery pipeline.</p>
+
+					<img src="./img/important.png" alt="ci-cd" style="width: 550px; height: 300px;">
+				</section>
+				<section>
+					<p>
+						Continuous integration (CI) refers to the practice of automatically and frequently integrating code changes into a 
+						shared source code repository. Continuous delivery and/or deployment (CD) is a 2 part process that refers to the integration, 
+						testing, and delivery of code changes.
+					</p>
+					<img src="./img/ci-cd.png" alt="ci-cd" style="width: 1050px; height: 300px;">
+				</section>
+				<section>
+					<h2>What is continuous integration?</h2>
+					<p>
+						The "CI" in CI/CD always refers to continuous integration, an automation process for developers that facilitates 
+						more frequent merging of code changes back to a shared branch, or “trunk.”
+					</p>
+					<img src="./img/ci.png" alt="ci" style="width: 550px; height: 300px;">
+				</section>
+				<section>
+					<h2>What is CD?</h2>
+					<p>
+						The "CD" in CI/CD refers to continuous delivery and/or continuous deployment, which are related concepts that sometimes 
+					get used interchangeably. Both are about automating further stages of the pipeline, but they’re sometimes used separately to 
+					illustrate just how much automation is happening. 
+					</p>
+				</section>
+				<section>
+					<h2>Continuous Delivery</h2>
+					<p>Continuous Delivery means that the code is always ready for release. After passing automated tests, the code is prepared for production, but the deployment itself is a manual step. 
+						The team can decide when to release the update, ensuring that the code is stable and deployable at any time.</p>
+				</section>
+				<section>
+					<h2>Continuous Deployment</h2>
+					<p>Continuous Deployment, on the other hand, takes it a step further. In this process, the code is automatically deployed to production immediately after it passes all tests.</p>
+					<div>
+						<img src="./img/amazon.png" alt="amazon" style="width: 350px; height: 300px;">
+						<img src="./img/netflix.png" alt="netflix" style="width: 350px; height: 300px;">
+					</div>
+					
+				</section>
+				<section>
+					<h4>How does CI/CD Pipeline work?</h4>
+					<p>
+						A pipeline in the context of software development, particularly in CI/CD (Continuous Integration/Continuous Deployment), 
+						refers to an automated sequence of processes that code undergoes 
+						from development to production.
+					</p>
+					<img src="./img/cd.png" alt="cd" style="width: 550px; height: 300px;">
+				</section>
+				<section>
+					<h3>CI/CD security</h3>
+					<img src="./img/security.png" alt="security" style="width: 550px; height: 300px;">
+					<p>CI/CD security is used to safeguard code pipelines with automated checks and testing to prevent vulnerabilities in software delivery.</p>
+				</section>
+				<section>
+					<h2>What are some common CI/CD tools?</h2>
+					
+				</section>
+				<section>
+					<h3>Jenkins</h3>
+					<img src="./img/jenkins.png" alt="jenkins" style="width: 500px; height: 350px;">
+					<p>designed to handle anything from a simple CI server to a complete CD hub</p>
+				</section>
+				<section>
+					<h3>Spinnaker</h3>
+					<img src="./img/spinnaker.png" alt="spinnaker" style="width: 500px; height: 150px;">
+					<p>a CD platform built for multicloud environments.</p>
+				</section>
+				<section>
+					<h3>GoCD</h3>
+					<img src="./img/images.png" alt="gocd" style="width: 500px; height: 350px;">
+					<p> a CI/CD server with an emphasis on modeling and visualization.</p>
+				</section>
+				<section>
+					<h3>Concourse</h3>
+					<img src="./img/0_WazRDfGDBQ1tEmYU.png" alt="concourse" style="width: 500px; height: 250px;">
+					<p>an open-source continuous thing-doer.</p>
+				</section>
+				<section>
+					<h3>Screwdriver</h3>
+					<img src="./img/schrewdriver.png" alt="schrewdriver" style="width: 300px; height: 150px;">
+					<p>a build platform designed for CD.</p>
+				</section>
+				<section>
+					<h2>Conclusion</h2>
+					<p>In conclusion, CI/CD has become a standard in modern software development, enabling teams to release high-quality software faster and more reliably. </p>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
